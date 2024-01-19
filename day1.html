@@ -1,0 +1,213 @@
+<!DOCTYPE html><!--this for telling the server this html-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new page</title>
+
+    <!-- this is how we include css -->
+    <link rel="stylesheet" href="day1.css">
+
+    <!-- this is how we include external javascript -->
+    <script src="day1.js"></script>
+</head>
+
+<body>
+    <!-- this is are headiing tags -->
+    <h1>This are heading tags</h1>
+    <h1>hello</h1>
+    <h2>hello</h2>
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <hr>
+
+    <!-- paragraph -->
+    <p>
+    <h1>All type of paragarph tags</h1><br>
+    This tag is for making word strong (strong tag) <strong>hello</strong><br>
+    This tag is for making word empazise(em tag) <em>hello</em><br>
+    This tag is for making the word bold (b tag)<b>Hello</b><br>
+    This tag is for making word italic(i tag) <i>hello</i>
+    This tag is for making horizaontal line (hr tag )
+    <hr><br>
+    </p>
+    <p>
+    <h1>This is for the linkers</h1><br>
+    <a href="https://google.com">google</a><br>
+    <a href="https://youtube.com">youtube</a><br>
+    <h5>This linker will open in new page because we use target
+    </h5><br>
+    <a href="https://google.com" target="_blank">google</a>
+    <h5>This is link our own vscode pages use (/ in href)</h5><br>
+    <a href="/practice.html" target="_blank"> our own vscode page</a>
+    </p>
+    <hr>
+    <p>
+    <h1>Image </h1><br>
+    <!-- when image is not present then alt text is used -->
+    <img src="hello.jpg" alt="Error loading image"><br>
+    <img src="https://tse4.mm.bing.net/th?id=OIP.qUCgYZyy-eySKYMVdrZzqwHaDt&pid=Api&P=0&h=180" alt="image not fount">
+    </p>
+    <hr>
+    <p>
+    <h1>Creating List</h1><br>
+    <h5>for creating UNORDER list we use (ul ) </h5><br>
+    <ul type="square">
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+        <li>fourth item</li>
+
+    </ul>
+    <h5>for creating ORDER list we use (ol ) </h5><br>
+    <ol>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+        <li>fourth item</li>
+    </ol>
+    <h5>for creating combination of OL and UL list </h5><br>
+    <ol>
+        <li>in undorder we use subpart as order list</li>
+        <ol>
+            <li>first item</li>
+            <li>second item</li>
+        </ol>
+        <li>in undorder we use subpart as order list</li>
+        <ol>
+            <li>first item</li>
+            <li>second item</li>
+        </ol>
+
+
+    </ol>
+    <ul>
+        <li>in undorder we use subpart as order list</li>
+        <ul>
+            <li>first item</li>
+            <li>second item</li>
+        </ul>
+        <li>in undorder we use subpart as order list</li>
+        <ul>
+            <li>first item</li>
+            <li>second item</li>
+        </ul>
+
+
+    </ul>
+    </p>
+    <hr>
+
+    <p>
+    <h1>Creating Tables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>NAME </th>
+                <th>employee id </th>
+                <th>registeration number </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>faizan</td>
+                <td>student</td>
+                <td>210907274</td>
+            </tr>
+            <tr>
+                <td>ismah</td>
+                <td>student</td>
+                <td>210907272</td>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <hr>
+    <p>
+    <h1>Creating forms</h1><br>
+    <form action="backend.php">
+        <div>
+            NAME: <input type="text">
+        </div>
+        <br>
+        <div>
+            ROLE: <input type="text">
+        </div>
+        <br>
+        <div>
+            <!-- name is used in backend by that name it is recozigned in backend -->
+            EMAIL: <input type="email" name="myemail">
+        </div>
+        <br>
+        <div>
+            Write about your self: <br> <textarea name="new text" id="" cols="25" rows="8"></textarea>
+        </div>
+        <br>
+        <div>
+            DATA: <input type="date" name="data">
+        </div>
+        <br>
+        <div>
+            Are you eligible <input type="checkbox" name="mycheckbox" ]>
+        </div>
+        <br>
+        <div>
+            Gender : <br>
+            <!-- by giving the same name one checkbox is used -->
+            Male: <input type="radio" name="myradio">
+            Female: <input type="radio" name="myradio">
+        </div>
+        <br>
+        <div>
+            Coding Skills: <input type="range" name="my range">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="Mycar" id="car">
+                <option value="BMW">BMW</option>
+                <option value="AUDI">AUDI</option>
+                <option value="ferrai">ferrai</option>
+                <option value="lambo">lambo</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+        </div>
+        <br>
+    </form>
+    </p>
+    <hr>
+    <p>
+        <h1>Difference between inline and block elements</h1>
+        This is block elements
+        <p style="border: 2px solid brown;">Hello world</p>
+        <p style="border: 2px solid yellowgreen;">hello world</p>
+        This is span elements <br>
+        <span style="border:2px solid  blueviolet;">hello world</span>
+        <span style="border:2px solid  blue;">hello world</span>
+    </p>
+    <hr>
+    <p>
+    <h1>Entitis</h1><br>
+    To create space we use (&nbsp;) <br>
+    angle brackets are written like this &lt;p&gt; <br>
+    pound symbol is written like this &pound; <br>
+    copyright symbol is written like this &copy; <br>
+    </p>   
+    <hr> 
+    
+
+    
+
+
+</body>
+
+</html>
