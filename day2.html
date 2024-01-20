@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS practice</title>
+    <link rel="stylesheet" href="day2.css">
+</head>
+
+<body>
+    <h3>Inline,Internal,Block</h3>
+    1>This all inline ,internal,external is differ by the id numbers <br>
+    2>For <b>class</b> we use (.) to define and for <b>id</b> we use (#) to define
+    <p id="idnumber1" style="color: peru; background-color: aqua;">For this color we used inline css</p>
+    <style>
+        #idnumber2 {
+            color: blueviolet;
+            background-color: blanchedalmond;
+        }
+    </style>
+    <p id="idnumber2">For this color we use intrnal css </p>
+    <!-- for this we used external css -->
+    <p id="idnumber3">For this color we use external css</p>
+    <hr>
+    <h3>Css Fonts</h3>
+    <style>
+        #fonts1 {
+            font-family: cursive;
+            font-size: x-large;
+            line-height: 2em;
+            font-weight: bold;
+        }
+    </style>
+    <p id="fonts1"> hello word</p>
+    <hr>
+    <h3>Colors</h3>
+    1>Colors are given in 3 ways byname,rgb,hexvalues
+    <style>
+        #color1 {
+            color: chocolate;
+            background-color: black;
+        }
+
+        #color2 {
+            color: rgb(25, 105, 20);
+            background-color: black;
+        }
+
+        #color3 {
+            color: #5d7793;
+            background-color: black;
+        }
+    </style>
+    <p id="color1">Hello world</p>
+    <p id="color2">Hello world</p>
+    <p id="color3">Hello world</p>
+    <hr>
+    <h3>Height ,Width ,Border and background</h3>
+    <style>
+        #bg1 {
+            background-color: pink;
+            height: 50px;
+            width: 150px;
+            border-width: 3px;
+            border-bottom: black;
+            border-style: solid;
+            border-radius: 19px;
+        }
+    </style>
+    <p id="bg1">Hello world</p>
+    <style>
+        #bg2 {
+            background-color: gray;
+            height: 50px;
+            width: 150px;
+            border-top: 4px solid black;
+            border-left: 4px solid purple;
+            border-right: 4px solid goldenrod;
+            border-bottom: 4px solid rebeccapurple;
+            border-bottom-right-radius: 25px;
+        }
+    </style>
+    <p id="bg2">Hello world</p>
+    <style>
+        #bg3 {
+            background-image: url(https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo);
+            height: 500px;
+            width: 1500px;
+        }
+    </style>
+    we can insert a image in a background
+    <p id="bg3"> </p>
+    <hr>
+    <style>
+        #box1 {
+            background-color: pink;
+            border: 4px solid black;
+            padding: 15px;
+            margin: 30px;
+        }
+
+        #box2 {
+            background-color: blue;
+            border: 4px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #box3 {
+            background-color: rgb(9, 110, 9);
+            border: 2px solid black;
+            padding: 30px;
+            margin: 35px;
+        }
+    </style>
+    <h3>Box model</h3>
+    >In box model margin lies outside and border next and padding <br>
+    >The text in 3 is inside beacuse of the padding <br>
+    >for padding the order = top right bottom left <br>
+    <p id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat v
+        ero totam unde inventore facere soluta, deserunt maxime velit sint nobis
+        architecto provident consectetur, saepe, repellendus tenetur dolor porro sit
+        perferendis.</p>
+
+    <p id="box2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum accusamus deleniti ut animi. Ad odio
+        doloremque maiores corrupti, rerum nostrum perferendis incidunt sint ullam distinctio numquam, a officia natus
+        ratione?</p1><br>
+
+
+    <p id="box3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta officiis nostrum a ad cupiditate
+        voluptatem maiores nulla doloribus veritatis cumque pariatur sed, iste porro aspernatur accusantium id nisi
+        optio? Alias.</p>
+
+     <hr>
+     <h3>Links and Buttons</h3>  
+     <style>
+        .container{
+            border: 4px solid red;
+            background-color: black;
+            padding :34px;
+            margin:34px;
+            width:666px auto;
+        }
+        .btn{
+            background-color: hotpink;
+            padding:6px;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #p_1:hover{
+            color: green;
+        }
+        p{
+            color: white;
+        }
+        #h3_1{
+            color:aliceblue
+
+        }
+     </style> 
+     <div class="container" id = "cont1">
+        <h3 id = "h3_1">This is my heading</h3>
+        <p id = "p_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium modi voluptatem impedit unde consectetur magni hic explicabo ut ipsum minima, quas qui ea quis dicta delectus! Vel optio doloremque veritatis!</p>
+        <a href="" class="btn">Read more</a>
+        <button class="btn"> contact us </button>
+     </div>
+     <hr>
+     <h3>Navigation menu</h3>
+     <style>
+        .navbar{
+            background-color: black;
+            border-radius: 20px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float :left;
+            margin: 13px 20px;
+            list-style: none;
+        }
+        .navbar li a{
+            padding:3px 3px;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .search{
+            float: right;
+            color:white;
+            padding: 12px 75px;
+        }
+
+     </style>
+     <header>
+        <nav class = "navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class ="search">
+                    <input type="text" name ="search " id = "search" placeholder="search here">
+                </div>
+            </ul>
+        </nav>
+     </header>
+     <hr>
+   
+
+
+
+</body>
+
+</html>
