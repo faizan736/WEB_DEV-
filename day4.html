@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+</head>
+<style>
+    .box{
+        width:170px;
+        height:170px;
+        border: 2px solid black;
+
+    }
+    #box1{
+        background-color: green;
+        position: relative;
+        top :34px;
+        z-index:-16;
+        /* z-index means over lapping the to block */
+        /* z-index will worl only for the position : realtive,absolute,fixed or sticky */
+
+
+    }
+    #box2{
+        background-color: violet;
+        position: relative;
+        top:4px;
+        z-index: 35;
+    }
+    #box3{
+        /* display: none;    will hide the elements and the space */
+        /* visibility: hidden;  will hide the element and keep space */ 
+        background-color: brown;
+    }
+    #box4{
+        background-color: blue;
+    }
+</style>
+<body>
+    <div>
+    <h2>Visibility and z-index</h2>
+    z-index means over lapping the to block <br>
+    z-index will worl only for the position : realtive,absolute,fixed or sticky <br>
+    <!-- div.box#box$*4 gives class box and id's as box1 and box2 .... $ indicates number -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    </div>
+    <hr>
+    <style>
+        .container{
+            height :540px;
+            width:100;
+            border : 2px solid black;
+            /* initialize the container with flexbox */
+            display: flex;
+
+            /* flex properties for flex container */
+            /* flex-direction: row;
+            flex-direction: row-reverse; */
+            /* flex-wrap: wrap;
+            justify-content:space-between;
+            align-items: center; */
+
+        }
+        .item{
+            width :200px;
+            height : 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin :10px;
+            padding: 3px;
+        }
+        #item1{
+            order:2;
+            flex-grow:3;
+
+        }
+      
+    </style>
+    <div>
+        <h2>Flex Box</h2>
+        <div class="container">
+            <div class="item" id="item1">first box</div>
+            <div class="item" id="item2">second box</div>
+            <div class="item" id="item3">thirdbox</div>
+            <div class="item" id="item4">fourth box</div>
+            <div class="item" id="item5">fifth box</div>
+            <div class="item" id="item6">sixth box</div>
+        </div>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
