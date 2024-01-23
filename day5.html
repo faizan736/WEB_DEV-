@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day5</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        /* background: url("https://source.unsplash.com/3tYZjGSBwbk") no-repeat center center/cover; */
+     
+
+    .navigation {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        padding: 34px 23px;
+    }
+
+    section {
+        height: 344px;
+        margin: 3px 23px;
+        /* border: 2px solid white; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /* section::before{
+        content: "This is a content";
+    }
+    section::after{
+        content: "This is a content";
+    } */
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+    }
+    /* In simple words, :before and :after in CSS are pseudo-elements that let you insert content before or after an element's actual content */
+    header::before{
+        content: "";
+        background: url("bg1.jpg") no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top:0;
+        left: 0;
+        opacity: 0.5;
+        
+    }
+    /*  <img src="https://drive.google.com/thumbnail?id=0B6wwyazyzml-OGQ3VUo0Z2thdmc&sz=w1000" alt="Page Image"> */
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">contact us</li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome !</h1>
+        <p>Dark forest: Mysterious, dense woodland, shrouded in shadows, concealing secrets and creating an aura of intrigue and eerie beauty.</p>
+    </section>
+    
+    
+
+</body>
+
+</html>
