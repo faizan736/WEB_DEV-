@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day6</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin:12px 13px;
+        /* border: 2px solid rebeccapurple; */
+        background-color: aqua;
+        box-shadow: 10px 13px black;
+        /* box-shadow: 10px 13px  5px black;  this is to make blurly effect*/
+    }
+    .container11 {
+        display: flex;
+    }
+
+    .card1 {
+        padding: 23px 12px;
+        margin:12px 13px;
+        /* border: 2px solid rebeccapurple; */
+        background-color: aqua;
+        box-shadow: -10px -13px black;
+    }
+    #b1{
+        color: red;
+    }
+
+</style>
+
+<body>
+    <h1>Box shadow</h1>
+
+    <div class="container">
+        
+        <div class="card" id="card1">
+            <h2> card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda culpa quae nihil voluptate rem
+                a in adipisci commodi laborum quidem eos vel consectetur earum, debitis eaque? Molestias ipsam nesciunt
+                ipsum veniam iusto tempora.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda culpa quae nihil voluptate rem
+                a in adipisci commodi laborum quidem eos vel consectetur earum, debitis eaque? Molestias ipsam nesciunt
+                ipsum veniam iusto tempora.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda culpa quae nihil voluptate rem
+                a in adipisci commodi laborum quidem eos vel consectetur earum, debitis eaque? Molestias ipsam nesciunt
+                ipsum veniam iusto tempora.</p>
+        </div>
+    </div>
+    <div>
+      <b  id = "b1"> Top one used +box shadow bottom one is used - box shadow</b>
+    </div>
+    <div class="container11">
+        
+        <div class="card1" id="card1">
+            <h2> card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda culpa quae nihil voluptate rem
+                a in adipisci commodi laborum quidem eos vel consectetur earum, debitis eaque? Molestias ipsam nesciunt
+                ipsum veniam iusto tempora.</p>
+        </div>
+        <div class="card1" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda culpa quae nihil voluptate rem
+                a in adipisci commodi laborum quidem eos vel consectetur earum, debitis eaque? Molestias ipsam nesciunt
+                ipsum veniam iusto tempora.</p>
+        </div>
+        <div class="card1" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda culpa quae nihil voluptate rem
+                a in adipisci commodi laborum quidem eos vel consectetur earum, debitis eaque? Molestias ipsam nesciunt
+                ipsum veniam iusto tempora.</p>
+        </div>
+    </div>
+    <hr>
+    <style>
+        .box{
+            /* This is called CSS varaiables */
+            --box-color:purple;
+
+            width:200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid black;
+            box-shadow: 3px 3px var(--box-color);
+            margin: 2px 9px; 
+        }
+        .container2{
+            display: flex;
+        }
+    </style>
+    <div>
+        <h2>CSS Variables and Custom Properties</h2>
+        <div class="container2">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
