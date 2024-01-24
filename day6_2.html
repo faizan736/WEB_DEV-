@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+</head>
+<style>
+    #box{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: purple;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 2s;
+    }
+    #box:hover{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <h3>Transitions</h3>
+    <div class="container">
+        <h3>hover over box</h3>
+        <div id="box">
+            This is box
+        </div>
+    </div>
+    <hr>
+    <style>
+        #box1{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+            justify-content: center;
+            align-items: center;
+            transform: all 1s ease-in-out;
+           
+       
+        }
+        #box1:hover{
+            transform: rotate(35deg)
+        }
+    </style>
+    <h3>transformation</h3>
+    <div class="container1">
+        <h3>hover over box</h3>
+        <div id="box1">
+            This is box
+        </div>
+    </div>
+    
+</body>
+</html>
