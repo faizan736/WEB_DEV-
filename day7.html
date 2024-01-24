@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day7</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 300px 300px 100px;
+            /* grid-template-columns: repeat(10,auto); */
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border :2px solid black;
+            margin: 3px;
+        }
+        .container1{
+            display: grid;
+            grid-template-columns: repeat(10,auto);
+
+        }
+        .item1{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border :2px solid black;
+            margin: 3px;
+
+        }
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 2fr 4fr;
+            grid-auto-rows: 3fr;
+            grid-template-columns: 2fr 3fr 3fr;
+            grid-gap: 2rem;
+
+
+        }
+        .box{
+            background-color: purple;
+            border: 2px solid black;
+        }
+        .container2{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside';
+
+
+        }
+        .item2{
+            background-color: palegreen;
+            border: 3px solid black;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+
+        }
+        #aside{
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <h3>  grid-template-columns: 300px 300px 100px;</h3>
+    <div class="container">
+        
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+    </div>
+    <hr>
+    <h3>grid-template-columns: repeat(10,auto);</h3>
+    <div class="container1">
+    <div class="item1">This is item-1</div>
+    <div class="item1">This is item-2</div>
+    <div class="item1">This is item-3</div>
+    <div class="item1">This is item-4</div>
+    <div class="item1">This is item-5</div>
+    <div class="item1">This is item-6</div>
+    <div class="item1">This is item-7</div>
+    <div class="item1">This is item-8</div>
+    <div class="item1">This is item-9</div>
+
+    </div>
+    <hr>
+    <h2>display: grid;
+        grid-template-rows: 1fr 2fr 4fr;<br>
+        grid-auto-rows: 3fr;<br>
+        grid-template-columns: 2fr 3fr 3fr;<br>
+        grid-gap: 2rem;<br></h2>
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+    <hr>
+    <div class="container2">
+        <div id="navbar" class ="item2">
+            home about contactus 
+        </div>
+        <div id="section" class ="item2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit id quo dolorum consectetur commodi facilis, dicta odio corrupti accusantium doloremque obcaecati animi doloribus libero laborum amet eligendi laudantium optio aliquam porro eveniet alias modi ipsa. Vero reprehenderit obcaecati dolorem quidem quod, error temporibus, possimus recusandae eveniet neque a deleniti esse aliquid quaerat. Iste qui, consequatur nemo deserunt eveniet quaerat perferendis blanditiis iusto quos nostrum aliquam ipsa? Accusantium accusamus dolores voluptatibus fugiat exercitationem libero harum deleniti repellendus, expedita tempore doloribus cum. Facilis praesentium, vel provident optio quo illo nam, necessitatibus, adipisci reprehenderit eaque dolores harum accusantium neque magnam incidunt maxime. Corrupti deleniti fugiat consequatur nostrum dolorem voluptatem dolor eos laudantium nihil, mollitia aliquam eaque praesentium maiores cupiditate reprehenderit, magnam fugit itaque non autem, provident temporibus expedita ipsam. Reprehenderit neque temporibus suscipit sed id nemo odio enim debitis iusto laborum! Porro cumque eum magni nobis optio. Aperiam dolorum consectetur omnis corrupti doloribus ipsam esse qui natus deserunt quidem enim rerum eos, dolorem beatae similique ut illum, impedit mollitia excepturi cumque incidunt modi quam! Qui commodi voluptatum nobis iste voluptates, rem iusto, enim nesciunt recusandae at, doloremque aliquam delectus sunt? Neque dolorum maiores quo accusamus placeat architecto minima reprehenderit temporibus, consequuntur illo nesciunt provident ex eius enim aliquid praesentium numquam consequatur velit dicta cum? Iusto numquam atque architecto unde, porro pariatur, quam sequi neque quaerat optio rem minima, quos quisquam sed aspernatur perspiciatis in harum. Exercitationem, fugiat? Dolores sint ab cupiditate odio quod beatae illum eos. Eveniet, iste repudiandae reiciendis nobis perspiciatis dolorem laborum eligendi odio qui natus tempora labore placeat quos aliquid eius ipsa molestiae iure rem dolores voluptatem? Saepe provident sed, hic doloribus numquam fugit quibusdam rem! Iure consectetur iusto repudiandae corrupti praesentium, optio cupiditate iste voluptas, quae consequuntur quas fuga temporibus aliquid aliquam nobis tempore molestias ab sapiente dignissimos! Illum non dolores possimus eaque maxime soluta, nostrum aliquam ad quidem consequuntur, aspernatur repellendus quas autem, officiis explicabo voluptate molestiae unde nemo. Pariatur doloremque sint dolor exercitationem sed, atque voluptatum perferendis commodi magni repudiandae necessitatibus vero et quidem non molestiae facilis minus impedit sequi laudantium aperiam! Qui, odit quam. Velit eum veniam repellendus quaerat corrupti id nobis natus enim in quia sunt, atque, quisquam obcaecati sed eveniet hic amet similique dignissimos quis maxime. Omnis sapiente quibusdam delectus fugit natus perspiciatis quia libero inventore culpa maxime eum sunt odit, blanditiis voluptatibus dolore. Cupiditate voluptate voluptatum pariatur esse quis, doloribus dolores. Nisi, est.
+        </div>
+        <div id="aside" class ="item2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, molestias accusamus aliquid vitae fugit earum laboriosam beatae, a alias aliquam dolore ex qui id amet nesciunt? Rerum odio provident ipsum esse a deleniti neque, maiores eaque sunt doloribus atque sit officia possimus facilis! Sed atque ex enim, quae eum placeat quidem dolor nulla eius numquam est accusamus autem voluptate. Quasi, modi fuga non aliquid similique ea temporibus quas corporis minima, ipsam accusamus enim beatae placeat fugiat perferendis commodi sapiente veniam! Possimus aliquam fuga temporibus debitis nulla numquam deserunt quam repellendus odit maxime assumenda sint dignissimos aliquid, vel, alias atque dolores.
+        </div>
+        <!-- <div class="item2">Item-1</div>
+        <div class="item2">Item-2</div>
+        <div class="item2">Item-3</div>
+        <div class="item2">Item-4</div>
+        <div class="item2">Item-5</div>
+        <div class="item2">Item-6</div>
+        <div class="item2">Item-7</div>
+        <div class="item2">Item-8</div>
+        <div class="item2">Item-9</div>
+        <div class="item2">Item-10</div>
+        <div class="item2">Item-11</div>
+        <div class="item2">Item-12</div>
+        <div class="item2">Item-13</div>
+        <div class="item2">Item-14</div> -->
+    </div>
+    
+</body>
+</html>
